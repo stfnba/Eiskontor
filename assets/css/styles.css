@@ -1,0 +1,189 @@
+.horizontal_box{
+  float: left;
+  padding: 20px;
+}
+.stop_float{
+  clear: both;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Courier New;
+  margin: 0;
+  cursor: url('assets/icons/ice-cream-2.png'), default !important;
+}
+
+.customCursor {
+  cursor: url('assets/icons/ice-cream-2.png'), default !important;
+}
+
+a {
+cursor:url('assets/icons/ice-cream-4.png'), default !important;
+}
+
+/* unvisited link */
+a:link {
+  color: #000000;
+}
+
+/* visited link */
+a:visited {
+  color: #cccccc;
+}
+
+a:hover {
+  color: #fecd04;
+}
+
+
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 100px;
+  font-family: Lie to me;
+  margin: -100px;
+}
+
+.header h2 {
+  font-size: 20px;
+  margin: 80px;
+
+}
+
+.header h3 {
+    position: relative;
+    font-family: Lie to me;
+}
+
+.Ueberschrift {
+  font-family: Lie to me;
+  font-size: 70px;
+  padding-left: 300px;
+}
+
+.Name {
+  font-family: Lie to me;
+  font-size: 40px;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+.side {
+margin-bottom:-400px;
+}
+
+.image {
+}
+
+.image:hover
+	{
+		opacity: 0.3;
+	}
+
+
+.Liste {
+  font-size: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
+  text-align: justify;
+  margin-bottom: -300px;
+}
+
+.Ingredients {
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: -320px;
+}
+
+
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: absolute;
+  position: -webkit-sticky;
+  top: 0;
+  font-size: 25px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #fecd04;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+
+
+/* Main column */
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: right;
+  background: #fecd04;
+  margin-top: 450px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
